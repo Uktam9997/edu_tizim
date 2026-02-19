@@ -1,0 +1,189 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #28a745;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    height: 50px;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+header nav a:hover {
+    background-color: #218838;
+}
+
+.search-box {
+    position: relative;
+    width: 300px;
+}
+
+.search-box input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+header div:last-child a {
+    text-decoration: none;
+    background-color: #d32f2f;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+header div:last-child a:hover {
+    background-color: #b71c1c;
+}
+
+main {
+    padding: 20px;
+    background-color: #f1f8e9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #d4edda;
+}
+
+/* Таблица расписания */
+.schedule-table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    background-color: #ffffff;
+    border: 2px solid #28a745;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-table th,
+.schedule-table td {
+    border: 1px solid #c3e6cb;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    word-wrap: break-word;
+}
+
+.schedule-table th {
+    background: #28a745;
+    color: white;
+    font-weight: bold;
+}
+
+.schedule-table tr:nth-child(even) td:first-child {
+    background: #d4edda;
+}
+
+.schedule-table tr:hover {
+    background: #c3e6cb;
+}
+
+.schedule-table button {
+    background: #d32f2f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.schedule-table button:hover {
+    background: #b71c1c;
+}
+
+/* Toast-style qidiruv natijalari */
+#searchToast {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    right: 0;
+    background: #620202;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    display: none;
+    animation: slideDown 0.3s ease;
+    z-index: 9999;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.search-item {
+    padding: 10px 12px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.search-item:hover {
+    background: #ff9800; /* Hoverda to‘q sariq */
+    color: #fff;
+}
+
+.group-link {
+    display: inline-block;
+    color: #007bff;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.group-link:hover {
+    text-decoration: underline;
+}

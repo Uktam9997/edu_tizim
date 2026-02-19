@@ -1,0 +1,102 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9; /* Светлый фон */
+    color: #333;
+}
+
+/* Ссылка для создания учителя */
+a[href*="teacher_create"] {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #28a745; /* Зеленый фон */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+a[href*="teacher_create"]:hover {
+    background-color: #218838; /* Темно-зеленый при наведении */
+}
+
+/* Таблица */
+table {
+    width: 100%; /* Таблица занимает всю ширину контейнера */
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff; /* Белый фон таблицы */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для таблицы */
+    border-radius: 8px; /* Закругленные углы */
+    overflow: hidden;
+}
+
+table thead {
+    background-color: #28a745; /* Зеленый фон заголовков */
+    color: white;
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd; /* Светлая рамка между ячейками */
+    font-size: 14px;
+}
+
+table th {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Светло-серый фон для четных строк */
+}
+
+table tr:hover {
+    background-color: #e9ecef; /* Светло-серый при наведении */
+}
+
+/* Ссылки в таблице */
+table a {
+    text-decoration: none;
+    color: #28a745; /* Зеленый цвет ссылок */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+table a:hover {
+    color: #218838; /* Темно-зеленый при наведении */
+}
+
+/* Кнопка удаления */
+table button {
+    background-color: #dc3545; /* Красный фон кнопки */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+table button:hover {
+    background-color: #c82333; /* Темно-красный при наведении */
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    table th,
+    table td {
+        font-size: 12px; /* Уменьшенный размер шрифта */
+        padding: 10px; /* Уменьшенные отступы */
+    }
+
+    a[href*="teacher_create"] {
+        font-size: 14px; /* Уменьшенный размер кнопки */
+    }
+}

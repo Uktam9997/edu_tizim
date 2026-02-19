@@ -1,0 +1,111 @@
+/* Контейнер для контента */
+main {
+    flex: 1; /* Контент занимает оставшееся пространство между шапкой и футером */
+}
+
+
+
+/* Футер */
+footer {
+    background-color: #4caf50; /* Зеленый фон */
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: auto; /* Футер прижимается к низу */
+}
+
+/* Заголовки ссылок */
+h4 a {
+    text-decoration: none;
+    color: #28a745; /* Зеленый цвет ссылок */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+h4 a:hover {
+    color: #218838; /* Темно-зеленый при наведении */
+}
+
+/* Контейнер для кнопок */
+.button-container {
+    display: flex;
+    gap: 15px; /* Расстояние между кнопками */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+/* Стили для кнопок */
+.button-container .btn {
+    text-decoration: none;
+    color: white;
+    background-color: #28a745; /* Зеленый фон */
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button-container .btn:hover {
+    background-color: #218838; /* Темно-зеленый при наведении */
+}
+
+/* Таблица */
+table {
+    width: 100%; /* Таблица занимает всю ширину контейнера */
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff; /* Белый фон таблицы */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для таблицы */
+    border-radius: 8px; /* Закругленные углы */
+    overflow: hidden;
+}
+
+table thead {
+    background-color: #28a745; /* Зеленый фон заголовков */
+    color: white;
+}
+
+table th,
+table td {
+    padding: 15px; /* Увеличенные отступы внутри ячеек */
+    text-align: center;
+    border: 1px solid #ddd; /* Светлая рамка между ячейками */
+}
+
+table th {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Светло-серый фон для четных строк */
+}
+
+table tr:hover {
+    background-color: #e9ecef; /* Светло-серый при наведении */
+}
+
+/* Ссылки и кнопки в таблице */
+table a {
+    text-decoration: none;
+    color: #28a745; /* Зеленый цвет ссылок */
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+table a:hover {
+    color: #218838; /* Темно-зеленый при наведении */
+}
+
+table button {
+    background-color: #dc3545; /* Красный фон кнопки */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+table button:hover {
+    background-color: #c82333; /* Темно-красный при наведении */
+}
